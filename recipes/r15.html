@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puran Poli </title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Puran Poli </h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+   
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/puran_poli.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+        <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Puran Poli 🍞</h2>
+
+    <!-- Puran Poli Ingredients -->
+    <ul>
+        <li> 1 cup Chana Dal (split chickpeas) 🌾</li>
+        <li> 1/2 cup Jaggery (grated) 🍯</li>
+        <li> 1/2 tsp Cardamom Powder 🌿</li>
+        <li> 1/4 tsp Nutmeg Powder (optional) 🌰</li>
+        <li> A pinch of Saffron strands (optional) 🌼</li>
+        <li> 1 tbsp Ghee (clarified butter) 🧈</li>
+        <li> 1 1/2 cups Whole Wheat Flour 🌾</li>
+        <li> 1/4 tsp Turmeric Powder ✨</li>
+        <li> 1/4 tsp Salt 🧂</li>
+        <li> Water (as required) 💧</li>
+        <li> Ghee for frying 🧈</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+
+    <!-- Preparing the Puran (Stuffing) -->
+    <ol>
+        <li> Wash the **chana dal** thoroughly and pressure cook it with enough water for 3-4 whistles, or until soft. Drain the excess water and set the dal aside. 🌾💧</li>
+        <li> In a pan, add the cooked dal, grated **jaggery**, cardamom powder, nutmeg powder (if using), and a pinch of saffron. Cook on medium heat, stirring frequently until the jaggery melts and mixes well with the dal. 🍯🌿🌼</li>
+        <li> Keep cooking the mixture until it thickens and the moisture evaporates. Stir occasionally to prevent it from sticking to the pan. Once it becomes a thick, dry paste, remove from heat. Let it cool down to room temperature. 🍯🔥</li>
+    </ol>
+
+    <!-- Preparing the Dough -->
+    <ol>
+        <li> In a mixing bowl, combine the **whole wheat flour**, turmeric powder, and salt. Add water little by little to form a smooth, soft dough. The dough should not be too sticky or too hard. 💧✨</li>
+        <li> Knead the dough well for 5-6 minutes until it is smooth and elastic. Cover with a damp cloth and let it rest for 20-30 minutes. 🧑‍🍳💧</li>
+    </ol>
+
+    <!-- Stuffing the Puran Poli -->
+    <ol>
+        <li> Once the dal mixture (puran) and dough are ready, divide the dough into equal portions, and similarly, divide the puran (stuffing) into small balls. 🍞🌾</li>
+        <li> Roll out one dough ball into a small circle (about 4 inches in diameter). Place the puran ball in the center and carefully bring the edges of the dough over the puran, sealing it completely. 🌾🍯</li>
+        <li> Gently roll out the stuffed dough ball into a thin circle (like a flatbread). Be careful not to let the puran spill out. 🌾🍞</li>
+    </ol>
+
+    <!-- Cooking the Puran Poli -->
+    <ol>
+        <li> Heat a tava (griddle) on medium heat. Place the rolled-out **puran poli** on the hot griddle and cook for about 2 minutes until small bubbles start to appear on the surface. 🍳</li>
+        <li> Flip it over and cook the other side. Drizzle some ghee over the top and flip again. Press gently with a spatula and cook until both sides are golden and crisp. 🧈🍞</li>
+        <li> Repeat this process for all the puran poli. 🍽️</li>
+    </ol>
+
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/4z4vXDqjZtw?si=weKwps9HDWPFmK2q" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>

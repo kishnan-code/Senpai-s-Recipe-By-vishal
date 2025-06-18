@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalebi</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Jalebi</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+   
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/jalebi.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+       <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Jalebi </h2>
+
+    <!-- Jalebi Ingredients -->
+    <ul>
+        <li> 1 cup All-Purpose Flour (Maida) 🌾</li>
+        <li> 1/4 cup Rice Flour 🍚</li>
+        <li> 1/4 tsp Baking Powder ✨</li>
+        <li> 1/4 tsp Turmeric Powder (for color) 🌿</li>
+        <li> 1/2 cup Water 💧 (adjust as needed)</li>
+        <li> Ghee or Oil for frying 🧈🍳</li>
+        <li> 1 1/2 cups Sugar 🍯</li>
+        <li> 1/2 cup Water (for syrup) 💧</li>
+        <li> A few Saffron Strands (optional) 🌼</li>
+        <li> 1/4 tsp Cardamom Powder 🌿 (optional)</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+
+    <!-- Making Jalebi -->
+    <ol>
+        <li> In a mixing bowl, combine **all-purpose flour**, **rice flour**, **baking powder**, and **turmeric powder**. Add water gradually and mix until you get a smooth batter. The batter should be thick but pourable. Let it rest for 30 minutes. 🌾💧</li>
+        <li> In a pan, add **sugar** and **water** to make the syrup. Stir and bring it to a boil. Once it starts boiling, reduce the heat and let it simmer for 5-7 minutes until it thickens slightly. Add **saffron strands** and **cardamom powder** for flavor and color (optional). 🍯💧🌿</li>
+        <li> Heat ghee or oil in a wide pan on medium-high heat for frying. You will need enough oil for deep frying. 🧈🍳</li>
+        <li> While the oil is heating, transfer the batter to a piping bag or a squeeze bottle. The batter should have a consistency that is thick enough to hold its shape but not too runny. 🍶</li>
+        <li> Once the oil is hot, start squeezing the batter in the shape of circular spirals or any shape you like into the hot oil. Fry the jalebis until they are crispy and golden brown. 🌾🍩</li>
+        <li> Once the jalebis are fried, immediately dip them in the hot sugar syrup. Let them soak for about 30 seconds, then remove them and place them on a plate. 🍯🔥</li>
+        <li> Repeat the process for the remaining batter. Serve the jalebis hot, garnished with additional saffron or cardamom, if desired. 🍩🌼</li>
+    </ol>
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/hgwdaU-K5wk?si=jHUlNkn49aedARTa" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>

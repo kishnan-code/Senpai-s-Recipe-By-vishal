@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyaaz Kachori 🧅</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Pyaaz Kachori 🧅</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/kachori.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+        <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Pyaaz Kachori 🥟</h2>
+
+    <!-- Pyaaz Kachori Ingredients -->
+    <ul>
+        <li> 1 ½ cups All-Purpose Flour (Maida) 🌾</li>
+        <li> 2 tbsp Semolina (Rava/Sooji) 🌾</li>
+        <li> 3 tbsp Ghee or Oil 🧈🍳</li>
+        <li> 1/4 tsp Baking Soda (optional, for extra crispiness) 🥄</li>
+        <li> Water (for dough) 💧</li>
+        <li> Salt to taste 🧂</li>
+
+        <h3>For the Filling:</h3>
+        <li> 2 Onions (finely chopped) 🧅</li>
+        <li> 1-2 Green Chilies (finely chopped) 🌶️</li>
+        <li> 1 tbsp Ginger-Garlic Paste 🧄</li>
+        <li> 1 tsp Cumin Seeds 🌱</li>
+        <li> 1/2 tsp Fennel Seeds (optional) 🌿</li>
+        <li> 1/2 tsp Asafoetida (Hing) 🧂</li>
+        <li> 1/2 tsp Red Chili Powder 🌶️</li>
+        <li> 1/2 tsp Turmeric Powder ✨</li>
+        <li> 1 tsp Coriander Powder 🌿</li>
+        <li> 1 tsp Garam Masala 🌿✨</li>
+        <li> 1 tbsp Amchur Powder (Dry Mango Powder) 🍋</li>
+        <li> Salt to taste 🧂</li>
+        <li> 1/4 cup Fresh Coriander (chopped) 🌿</li>
+        <li> 1 tbsp Sugar 🍯 (optional, for sweetness)</li>
+        <li> 2 tbsp Oil (for filling) 🍳</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+
+    <!-- Pyaaz Kachori Preparation -->
+    <ol>
+        <li> Begin by preparing the dough. In a mixing bowl, combine all-purpose flour, semolina, baking soda (optional), and salt. Add ghee or oil and rub it into the flour to form a crumbly texture. 🧈🌾</li>
+        <li> Gradually add water and knead the dough until it is smooth and soft. Cover it with a damp cloth and let it rest for 20-30 minutes. 💧</li>
+        <li> While the dough is resting, prepare the filling. Heat oil in a pan, and add cumin seeds and fennel seeds (if using). Let them splutter. 🌱🍳</li>
+        <li> Add the chopped onions and sauté until they turn golden brown. 🧅</li>
+        <li> Add ginger-garlic paste and chopped green chilies. Sauté for another 2 minutes until fragrant. 🧄🌶️</li>
+        <li> Add red chili powder, turmeric powder, coriander powder, garam masala, and salt. Stir well and cook for 2 minutes to blend the spices. 🌶️✨🌿</li>
+        <li> Add amchur powder (dry mango powder) and sugar (if using) for a tangy-sweet flavor. Mix well. 🍋🍯</li>
+        <li> Let the filling cool completely, then add fresh coriander. 🌿</li>
+        <li> Now, divide the rested dough into small equal-sized balls (about the size of a golf ball). 🌾</li>
+        <li> Roll each dough ball into a small circle, about 3-4 inches in diameter. Make sure the center is slightly thicker than the edges. 🍞</li>
+        <li> Place a spoonful of the onion filling in the center of each rolled-out dough circle. 🍅</li>
+        <li> Carefully gather the edges of the dough and pinch them together to seal the filling inside. Roll it gently into a smooth ball. 🥟</li>
+        <li> Heat oil in a deep frying pan over medium heat. Once the oil is hot, carefully drop the kachoris into the oil, one at a time. Fry them until golden brown and crispy, turning them occasionally to ensure even frying. 🍳</li>
+        <li> Remove the kachoris from the oil and drain excess oil on paper towels. 🍽️</li>
+        <li> Serve the crispy Pyaaz Kachoris hot with green chutney or tamarind chutney. 🌿🍯</li>
+    </ol>
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/urY8nTA_aoQ?si=ulfxVMq0HUddYWkw" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>

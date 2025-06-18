@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasgulla</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+        }
+        header .logo {
+            position: absolute;
+            left: 20px;
+        }
+        header .logo img {
+            width: 80px; 
+            height: 80px; 
+            border-radius: 50%; 
+            object-fit: cover;
+        }
+        header .heading h1 {
+            font-size: 1.8rem; 
+            color: #333; 
+            font-weight: 700;
+            text-align: center;
+            margin-left: 100px; 
+            flex-grow: 1;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+      
+        .container {
+            max-width: 800px;     
+            width: 100%;          
+            margin: 0 auto;       
+            padding: 20px;       
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Rasgulla 🍬</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="photos/rasgulla1.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+        <!-- Ingredients Section -->
+        <div class="ingredients">
+            <h2>Ingredients for rasgulla </h2>
+            <ul>
+                <li> 1 liter Full Cream Milk 🥛</li>
+                <li> 1 tbsp Lemon Juice 🍋</li>
+                <li> 1 tbsp Vinegar 🍇</li>
+                <li> 2 cups Sugar 🍬</li>
+                <li> 4 cups Water 💧</li>
+                <li> 1/2 tsp Cardamom Powder 🌿</li>
+                <li> 1 tsp Rose Water (optional) 🌹</li>
+                <li> 1 tbsp Cornflour (optional, for binding) 🌽</li>
+            </ul>
+        </div>
+
+        <!-- Steps Section -->
+        <div class="steps">
+            <h2>Steps 🍴</h2>
+            <ol>
+                <li> Boil the milk in a pan and add lemon juice or vinegar to curdle it. 🍋🍇</li>
+                <li> Strain the curdled milk through a muslin cloth to separate the chenna (cottage cheese) from the whey. 🧀</li>
+                <li> Knead the chenna until smooth and soft, adding a little cornflour if needed. 🌽</li>
+                <li> Form small balls of the chenna mixture, ensuring they are smooth and round. 🍮</li>
+                <li> In a large pan, mix sugar and water and bring it to a boil to make a sugar syrup. 🍬💧</li>
+                <li> Add the chenna balls to the boiling syrup and cook on medium heat for about 20 minutes until they expand and become spongy. 🍯</li>
+                <li> Once cooked, add cardamom powder and rose water for aroma and flavor (optional). 🌿🌹</li>
+                <li> Allow the Rasgullas to cool in the syrup before serving. 🍮</li>
+            </ol>
+        </div>
+
+        <!-- Video Link Section -->
+        <div class="video-link">
+            <a href="https://youtu.be/dd9_YZdQS0c?si=9mJ9-ThETwo4eqW1" target="_blank">Watch the Full Recipe Video 📺</a>
+        </div>
+    </div>
+
+</body>
+</html>

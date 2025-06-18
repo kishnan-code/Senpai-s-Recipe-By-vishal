@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galouti Kebab (Mutton) 🍖</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Galouti Kebab (Mutton) 🍖</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/gulati_kebab.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+       <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Galouti Kebab (Mutton) 🍖</h2>
+
+    <!-- Galouti Kebab Ingredients -->
+    <ul>
+        <li> 500g Mutton Mince (boneless, finely minced) 🐑</li>
+        <li> 1 Onion (finely chopped) 🧅</li>
+        <li> 1/4 Cup Fresh Coriander (chopped) 🌿</li>
+        <li> 2 tbsp Ginger-Garlic Paste 🧄</li>
+        <li> 2 Green Chilies (finely chopped) 🌶️</li>
+        <li> 1 tsp Red Chili Powder 🌶️</li>
+        <li> 1 tsp Garam Masala 🌿✨</li>
+        <li> 1/2 tsp Turmeric Powder ✨</li>
+        <li> 1 tsp Cumin Powder 🌱</li>
+        <li> 1/2 tsp Black Pepper Powder 🌶️</li>
+        <li> 2 tbsp Raw Papaya Paste (for tenderizing) 🍃</li>
+        <li> 1 tbsp Lemon Juice 🍋</li>
+        <li> 2 tbsp Ghee (clarified butter) 🧈</li>
+        <li> 1 tbsp Cashew Paste (optional, for richness) 🌰</li>
+        <li> 2 tbsp Cream 🧴</li>
+        <li> Salt to taste 🧂</li>
+        <li> 1 tbsp Cornflour or Rice Flour (for binding) 🌾</li>
+        <li> Ghee or Oil for frying 🧈🍳</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+
+    <!-- Galouti Kebab Preparation -->
+    <ol>
+        <li> In a large mixing bowl, combine the mutton mince, chopped onions, fresh coriander, green chilies, and ginger-garlic paste. 🧅🌿🌶️</li>
+        <li> Add red chili powder, garam masala, cumin powder, black pepper powder, turmeric powder, and salt to the mixture. 🌶️✨🌱</li>
+        <li> Add the raw papaya paste, lemon juice, cashew paste (optional), and cream. Mix everything well until all the ingredients are evenly combined. 🍋🌰🧴</li>
+        <li> Gradually add cornflour or rice flour to the mixture to help bind it. Knead the mixture for 5-7 minutes, ensuring it's smooth and well-combined. 🌾</li>
+        <li> Cover the mixture and refrigerate for at least 2 hours (or overnight) to allow the flavors to meld together and the kebab mixture to set. 🕒</li>
+        <li> After chilling, divide the mixture into small portions and shape them into round or oval-shaped patties, resembling kebabs. 🍖</li>
+        <li> Heat ghee or oil in a shallow pan over medium heat. Fry the kebabs on both sides until they are golden brown and crispy on the outside, while remaining soft and juicy inside. 🧈🍳</li>
+        <li> Remove the kebabs from the pan and drain excess oil on paper towels. 🍽️</li>
+        <li> Serve the Galouti Kebabs hot, garnished with onion rings, fresh coriander, and lemon wedges. 🍋🌿</li>
+    </ol>
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/yMEhhmqYYZM?si=Cd8fxlSb2IPdUn7Z" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assam - Khaar 🍛</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Assam - Khaar 🍛</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/assam_khar.webp" alt="Recipe 1 Image" class="recipe-img">
+
+       <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Assamese Khaar 🍲</h2>
+
+    <!-- Khaar Ingredients -->
+    <ul>
+        <li> 1/2 Cup Raw Papaya (peeled and chopped) 🥭</li>
+        <li> 1/2 Cup Masoor Dal (red lentils) 🥣</li>
+        <li> 2-3 Green Chilies (slit) 🌶️</li>
+        <li> 1 tbsp Khaar (alkaline water from filtered ash of certain plants)* 🌱</li>
+        <li> 1/2 tsp Turmeric Powder ✨</li>
+        <li> 1 tbsp Mustard Oil 🛢️</li>
+        <li> 1/2 tsp Cumin Seeds 🌱</li>
+        <li> 1-2 Bay Leaves 🍃</li>
+        <li> 1-2 Cloves 🌿</li>
+        <li> 1 Cinnamon Stick 🍂</li>
+        <li> Salt to taste 🧂</li>
+        <li> Fresh Coriander for garnish 🌿</li>
+        <li> 4-5 Cups Water 💧</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+
+    <!-- Khaar Preparation -->
+    <ol>
+        <li> In a pan, heat mustard oil over medium heat. Add cumin seeds, bay leaves, cloves, and cinnamon stick. Let them splutter for a few seconds. 🌱🍃</li>
+        <li> Add chopped raw papaya and sauté for 2-3 minutes. 🥭</li>
+        <li> Add turmeric powder and salt, then mix well. ✨🧂</li>
+        <li> Add red lentils (masoor dal) to the pan and mix everything together. 🥣</li>
+        <li> Pour in 4-5 cups of water and bring it to a boil. Once it starts boiling, reduce the heat and simmer for 15-20 minutes, or until the papaya and lentils are cooked soft. 💧</li>
+        <li> Once the lentils and papaya are cooked, add the **khaar** (alkaline water strained from the ashes of certain plants, usually from the “Sakua” plant). Stir well to mix it in. 🌱</li>
+        <li> Simmer the dish for another 5-7 minutes to allow the flavors to blend together. Adjust salt if needed. 🧂</li>
+        <li> Add the slit green chilies for an extra kick, and garnish with fresh coriander leaves before serving. 🌿🌶️</li>
+    </ol>
+
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/QfL612ph1ck?si=vaw-CAichEsfw0Nt" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>

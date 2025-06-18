@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cards 🍳</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            font-family: 'Lobster', cursive;
+
+            --transition-time: 0.5s;
+            --hero-overlay-color: rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header .logo img {
+            width: 90px; 
+            height: 68px; 
+            border-radius: 90%; 
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+header .logo {
+    padding: 0px;
+}
+
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-image: url('photos/b5.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 80vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+
+        /* Dark overlay on hero */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--hero-overlay-color);
+            z-index: 1;
+        }
+
+        /* Hero Content */
+        .hero-content {
+            z-index: 2;
+            animation: fadeInUp 2s ease-in-out; /* Fade and slide effect */
+        }
+
+       
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase; 
+            letter-spacing: 5px;  
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);  
+            color: #fff;  
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+       
+      
+        header {
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        header nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .recipe-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Explicitly set 4 columns */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .recipe-card {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-content {
+            padding: 20px;
+        }
+
+        .recipe-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+        .recipe-container2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Category card styles */
+        .food_category {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform var(--transition-time), box-shadow var(--transition-time);
+        }
+
+        .food_category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .food_category img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food_category-content {
+            padding: 20px;
+        }
+
+        .food_category-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .food_category-content p {
+            color: #666;
+            font-size: 1rem;
+        }
+        .customers {
+            background-color: #fff;
+            padding: 50px 20px;
+        }
+
+        .customers h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .customer-cards {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .customer-card {
+            background-color: var(--light-bg-color);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 10px var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+        .customer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px var(--card-hover-shadow);
+        }
+
+        .customer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .customer-card p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .customer-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        
+.about {
+    background-color: #fff; 
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%; /* Make the section span the full width of the viewport */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin: 0; /* Remove any margin */
+}
+
+.about-content {
+    max-width: 1000px; /* Limit max width of the content to ensure it doesn't get too stretched */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+}
+
+.about h2 {
+    font-family: 'Pacifico', cursive; /* Cute, playful font */
+    font-size: 3rem;
+    color:#333; /* Tomato red for warmth */
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-family: 'Quicksand', sans-serif; /* Rounded, friendly font */
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
+    opacity: 0.85;
+}
+
+/* Add a cute heart icon to the section */
+.about::before {
+    content: '💖';
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+   
+        
+        @media (max-width: 1024px) {
+            .recipe-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .recipe-container {
+                grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                padding: 0 20px;
+            }
+        }
+        a{
+           color: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div>
+                <a href="ex_recipe_d.php">Browse Recipes</a>
+                <a href="#category">Category</a>
+                <a href="#a1">About</a>
+                <a href="user.php">Write Your views</a>
+                <a href="all_comments.php">View All Commnets</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>  Welcome
+                    to
+             Senpai's Recipe !</h1>
+        </div>
+    </section>
+    <br>
+    <br>
+    
+
+    <header>
+        <h1>Most Famous Recipes</h1>
+    </header>
+    <div class="recipe-container">
+        <!-- Rasgulla -->
+        <div class="recipe-card">
+            <a href="r19.html">
+                <img src="photos/rasgulla1.jpg" alt="Rasgulla">
+            </a>
+            <div class="recipe-content">
+                <h3>Rasgulla 🍬</h3>
+                <p>Soft, spongy, and full of joy—Rasgulla's magic is in the air. ✨</p>
+                <div class="tags">
+                    <span class="tag">Dessert</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paneer Tikka -->
+        <div class="recipe-card">
+            <a href="r20.html">
+                <img src="photos/paneer_tikka.jpg" alt="Paneer Tikka">
+            </a>
+            <div class="recipe-content">
+                <h3>Paneer Tikka 🍢</h3>
+                <p>Smoky, spicy, and oh-so-delicious! 😍</p>
+                <div class="tags">
+                    <span class="tag">Appetizer</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="recipe-card">
+            <a href="r21.html">
+                <img src="photos/biryani.jpg" alt="Biryani">
+            </a>
+            <div class="recipe-content">
+                <h3>Chicken Biryani 🍚</h3>
+                <p>Aromatic, flavorful, and always a crowd-pleaser! 💖</p>
+                <div class="tags">
+                    <span class="tag">Main Course</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pav Bhaji -->
+        <div class="recipe-card">
+            <a href="r22.html">
+                <img src="photos/p_bhaji.jpg" alt="Pav Bhaji">
+            </a>
+            <div class="recipe-content">
+                <h3>Pav Bhaji 🍞</h3>
+                <p>Spicy, buttery, and completely satisfying! 🤩</p>
+                <div class="tags">
+                    <span class="tag">Street Food</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <header>
+        <h1>Choose Your Recipe Category</h1>
+    </header>
+    
+    <div class="recipe-container2">
+        <!-- Main Course Category -->
+        <div class="food_category" id="category">
+            <a href="m_course.php">
+                <img src="photos/main_c.jpg" alt="Main Course">
+            </a>
+            <h3>Main Course</h3>
+            <br>
+            <p>"Fuel your day with a delicious main course 🍽️💪"</p>
+            <br>
+            <div class="tags">
+                <span class="tag">Main Course</span>
+                <span class="tag">Indian</span>
+            </div>
+        </div>
+
+        <!-- Starter Category -->
+        <div class="food_category">
+            <a href="s2.php">
+                <img src="photos/s.jpg" alt="Starter">
+            </a>
+            <h3>Starter</h3>
+            <br>
+            <p>"Appetizers that tease your taste buds 🍅👅"</p>
+            <br>
+            <div class="tags">
+                <span class="tag">Appetizer</span>
+                <span class="tag">Indian</span>
+            </div>
+        </div>
+
+        <!-- Dessert Category -->
+        <div class="food_category">
+            <a href="dessert.php">
+                <img src="photos/c_cake.jpg" alt="Dessert">
+            </a>
+            <h3>Dessert</h3>
+            <br>
+            <p>"Indulge in sweetness, because you deserve it 🍪💖"</p>
+            <br>
+            <div class="tags">
+                <span class="tag">Dessert</span>
+                <span class="tag">Indian</span>
+            </div>
+        </div>
+    </div>
+    <br>
+   <!-- Customer Section -->
+   <section class="customers">
+    <h2>Here's What Our Happy Customers Are Saying!✨</h2>
+    <div class="customer-cards">
+        <!-- Customer 1 -->
+        <div class="customer-card">
+            <img src="photos/c1.webp" alt="Customer 1">
+            <p>"The recipes here are super easy to follow and oh-so-delicious! I've tried a bunch, and I’m always left smiling – never disappointed! 😊🍴"</p>
+
+            <h3>- Nishinoya</h3>
+        </div>
+        <!-- Customer 2 -->
+        <div class="customer-card">
+            <img src="photos/c3.jpg" alt="Customer 2">
+            <p>"I absolutely adore how diverse the recipes are! Every time, it’s like going on a tasty adventure, trying new flavors and cuisines! 😍🍽️"</p>
+
+            <h3>- Pikachu</h3>
+        </div>
+        <div class="customer-card">
+            <img src="photos/c2.webp" alt="Customer 2">
+            <p>"I can’t get enough of these recipes! Each dish feels like a warm hug, and the flavors are always spot on. 🥰🍲"</p>
+
+            <h3>- Hinata</h3>
+        </div>
+    </div>
+</section>
+<section class="about" id="a1">
+    <div class="about-content">
+        <h2>About Senpai's Recipes 🍳</h2>
+        <p>Welcome to Senpai's Recipe Collection! Here, we make cooking fun and easy 🍲. Whether you're new to the kitchen or a seasoned chef 👩‍🍳, you'll find something delicious to try. Our recipes are simple, flavorful, and perfect for any occasion 🍰.</p>
+        <p>Join us on a culinary adventure 🌍 as we explore tasty dishes from all around the world 🌟. Happy cooking! ✨</p>
+    </div>
+</section>
+
+
+
+</body>
+
+</html>

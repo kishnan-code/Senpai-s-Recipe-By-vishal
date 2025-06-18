@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cards 🍳</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --font-family: 'Arial', sans-serif;
+            --transition-time: 0.5s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        .recipe-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform var(--transition-time), box-shadow var(--transition-time);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);
+        }
+
+        .recipe-content {
+            padding: 20px;
+        }
+
+        .recipe-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .recipe-content p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .recipe-container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Senpai's Recipes</div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="recipe_details.php">Browse Recipes</a>
+            </div>
+        </nav>
+    
+    </header>
+    <br>
+    <br>
+    <div class="recipe-container">
+        <!-- Rasgulla -->
+        <div class="recipe-card">
+            
+            <img src="images.jpg" alt="Rasgulla">
+            <div class="recipe-content">
+                <h3>🔥 Chicken Tikka 🌶️ </h3>
+                <div class="quote">"A little spice, a little love – that's the magic of Chicken Tikka!" ✨🍗"</div>
+                <p>Tender, smoky, and spicy marinated chicken, grilled to perfection! 🍗🔥🌶️</p>
+                <div class="tags">
+                    <span class="tag">Starter</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paneer Tikka -->
+        <div class="recipe-card">
+            
+            <img src="paneer_tikka.jpg" alt="Paneer Tikka">
+            <div class="recipe-content">
+                <h3>Paneer Tikka 🍢</h3>
+                <div class="quote">"Grilled to perfection 🔥, juicy on the inside! 😋"</div>
+                <p>Smoky, spicy, and oh-so-delicious! 😍</p>
+                <div class="tags">
+                    <span class="tag">Appetizer</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="recipe-card">
+            <img src="biryani.jpg" alt="Biryani">
+            <div class="recipe-content">
+                <h3>Chicken Biryani 🍚</h3>
+                <div class="quote">"A whole world of spices in every bite 🌍🍚"</div>
+                 <p>Aromatic, flavorful, and always a crowd-pleaser! 💖</p>
+                <div class="tags">
+                    <span class="tag">Main Course</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pav Bhaji -->
+        <div class="recipe-card">
+            <img src="p_bhaji.jpg" alt="Pav Bhaji">
+            <div class="recipe-content">
+                <h3>Pav Bhaji 🍞</h3>
+                <div class="quote">"The heart of Mumbai served in a dish."</div>
+                <p>Spicy, buttery, and completely satisfying! 🤩</p>
+                <div class="tags">
+                    <span class="tag">Street Food</span>
+                    <span class="tag">Indian</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

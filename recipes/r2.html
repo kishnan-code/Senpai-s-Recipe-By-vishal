@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undhiyu Magic! 🥕🍠</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Undhiyu Magic! 🥕🍠</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/undhiyu.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+        <!-- Ingredients Section -->
+       <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Undhiyu 🍲</h2>
+    <ul>
+        <li> 2 Cups Mixed Vegetables (e.g., Eggplant, Sweet Potatoes, Green Beans, Carrots, and Baby Potatoes) 🥔🍆🥕</li>
+        <li> 1 Onion (finely chopped) 🧅</li>
+        <li> 2 Tomatoes (pureed) 🍅</li>
+        <li> 1 tbsp Ginger-Garlic Paste 🧄</li>
+        <li> 1 tbsp Red Chili Powder 🌶️</li>
+        <li> 1/2 tsp Turmeric Powder ✨</li>
+        <li> 1 tsp Coriander Powder 🌿</li>
+        <li> 1 tbsp Tamarind Paste 🍋</li>
+        <li> 1/4 Cup Fresh Fenugreek Leaves (Methi) 🌿</li>
+        <li> 1/4 Cup Green Chilies (slit) 🌶️</li>
+        <li> 1/2 Cup Grated Coconut 🥥</li>
+        <li> 1 tbsp Sesame Seeds 🌰</li>
+        <li> Salt and Oil for cooking 🧂🍳</li>
+        <li> Fresh Cilantro for garnish 🌿</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+    <ol>
+        <li> Heat oil in a large pan or wok and sauté the onions until golden brown. 🍳</li>
+        <li> Add the ginger-garlic paste and cook for 2 minutes until fragrant. 🧄</li>
+        <li> Add the pureed tomatoes, red chili powder, turmeric powder, and coriander powder. Cook for 5 minutes. 🍅🌶️✨</li>
+        <li> Add tamarind paste, a little water, and salt to create the curry base. Stir well. 🍋</li>
+        <li> Add the mixed vegetables (eggplant, sweet potatoes, green beans, carrots, and baby potatoes) into the pan. Stir them well to coat with the spices. 🥔🍆🥕</li>
+        <li> Add fresh fenugreek leaves, sesame seeds, and green chilies. Stir to combine and cook for about 10-15 minutes, allowing the vegetables to soften. 🌿🌰🌶️</li>
+        <li> Once the vegetables are cooked, add grated coconut and stir it in. Cook for an additional 5 minutes. 🥥</li>
+        <li> Garnish with fresh cilantro before serving. 🌿</li>
+    </ol>
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/76WP69qtDi8?si=b6FXxXNY3WBa2KuZ" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>

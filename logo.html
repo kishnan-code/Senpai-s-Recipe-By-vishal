@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senpai's Recipes</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Logo Styles */
+        .logo img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer; /* Make it look clickable */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .logo img:hover {
+            transform: scale(1.1); /* Slight zoom effect when hovered */
+        }
+
+        /* Hidden Checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Modal Styles (for larger version of the image) */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            width: 300px; /* Larger size for the image */
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Show modal when checkbox is checked */
+        input[type="checkbox"]:checked + .modal {
+            display: flex;
+        }
+
+        /* Close button inside modal */
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .modal .close:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Hidden Checkbox to control modal visibility -->
+        <input type="checkbox" id="logo-toggle">
+        
+        <!-- Logo Image -->
+        <div class="logo">
+            <label for="logo-toggle">
+                <img src="photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </label>
+        </div>
+
+        <!-- Modal with large image -->
+        <div class="modal">
+            <label for="logo-toggle" class="close">&times;</label>
+            <img src="photos/logo.jpg" alt="Senpai's Recipes Logo"> <!-- Larger Image -->
+        </div>
+    </header>
+
+</body>
+</html>

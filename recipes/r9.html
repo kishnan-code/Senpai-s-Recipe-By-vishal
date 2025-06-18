@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vada Pav 🍔</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Vada Pav 🍔</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/vada_pav.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+       <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Vada Pav 🍔</h2>
+
+    <!-- Vada Pav Ingredients -->
+    <ul>
+        <li> 4-5 Medium-sized Potatoes (boiled and mashed) 🥔</li>
+        <li> 1 Onion (finely chopped) 🧅</li>
+        <li> 2-3 Green Chilies (finely chopped) 🌶️</li>
+        <li> 1 tsp Ginger-Garlic Paste 🧄</li>
+        <li> 1/2 tsp Turmeric Powder ✨</li>
+        <li> 1 tsp Red Chili Powder 🌶️</li>
+        <li> 1 tsp Garam Masala 🌿</li>
+        <li> 1 tbsp Lemon Juice 🍋</li>
+        <li> 1 tbsp Fresh Coriander (chopped) 🌿</li>
+        <li> 1/2 tsp Asafoetida (Hing) 🧂</li>
+        <li> 1/2 tsp Mustard Seeds 🌱</li>
+        <li> 2 tbsp Oil (for cooking the filling) 🍳</li>
+        <li> Salt to taste 🧂</li>
+        <li> 1/2 Cup Besan (Chickpea Flour) 🌾</li>
+        <li> 1/4 tsp Baking Soda (optional, for crispiness) 🥄</li>
+        <li> 1/2 Cup Rice Flour (optional, for extra crunch) 🌾</li>
+        <li> Water (for making the batter) 💧</li>
+        <li> 4 Pav Buns (or burger buns) 🍞</li>
+        <li> Green Chutney (for serving) 🌿</li>
+        <li> Sweet Tamarind Chutney (for serving) 🍯</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+
+    <!-- Vada Pav Preparation -->
+    <ol>
+        <li> Begin by heating oil in a pan. Add mustard seeds and let them splutter. Add asafoetida (hing), chopped onions, and green chilies. Sauté for 2-3 minutes. 🌱🧅🌶️</li>
+        <li> Add ginger-garlic paste and sauté for another 2 minutes until fragrant. 🧄</li>
+        <li> Add turmeric powder, red chili powder, garam masala, and salt. Stir well. ✨🌶️🌿</li>
+        <li> Add the boiled and mashed potatoes to the pan. Mix well and cook for 5-7 minutes, allowing the flavors to meld together. 🍋🌿</li>
+        <li> Once the mixture is well-combined, remove it from the heat. Let it cool down for a few minutes, then shape it into small round balls (the size of a golf ball). 🥔</li>
+        <li> In a bowl, prepare the batter for coating the vadas. Combine besan, rice flour (optional), baking soda (optional), and a pinch of salt. Add water gradually to make a smooth batter that’s thick enough to coat the vadas. 🌾💧</li>
+        <li> Heat oil in a deep frying pan. Dip each potato ball (vada) into the batter, coating it completely. Then carefully drop it into the hot oil and fry until golden brown and crispy. Repeat for all the vadas. 🍳</li>
+        <li> Slice the pav buns in half, but don’t cut them all the way through. You can lightly toast the buns in a little oil or butter if you prefer. 🍞</li>
+        <li> To assemble the Vada Pav: Spread a little green chutney and tamarind chutney on the pav. Place a hot vada inside and press gently to flatten. 🍯🌿</li>
+        <li> Serve the Vada Pav hot with extra chutneys and fried green chilies on the side. 🌶️</li>
+    </ol>
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/r4saZD0J_gU?si=ZQy9kkKjM9ZgikMF" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>

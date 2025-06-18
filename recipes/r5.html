@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pav Bhaji 🍞🌶️</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef8e4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: center; /* Centers the heading in the header */
+            align-items: center; /* Vertically centers the items */
+            padding: 10px 20px;
+            background-color: #fff; /* Adjust the background color if needed */
+        }
+        header .logo {
+            position: absolute; /* Position logo at the left side */
+            left: 20px; /* Adjust the left position */
+        }
+        header .logo img {
+            width: 80px; /* Adjust logo width */
+            height: 80px; /* Adjust logo height */
+            border-radius: 50%; /* Circular logo */
+            object-fit: cover; /* Ensures the image fits properly inside the circle */
+        }
+        header .heading h1 {
+            font-size: 1.8rem; /* Adjust font size for the heading */
+            color: #333; /* Adjust text color */
+            font-weight: 700; /* Bold heading */
+            text-align: center; /* Centers the text */
+            margin-left: 100px; /* Optional: Adds space for the logo */
+            flex-grow: 1; /* Ensures the heading section takes up remaining space */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Container for content */
+        /* Container for content */
+        .container {
+            max-width: 800px;     /* Limit the maximum width */
+            width: 100%;          /* Make the container responsive */
+            margin: 0 auto;       /* Center the container horizontally */
+            padding: 20px;        /* Optional: Add some padding for content spacing */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Recipe Image */
+        .recipe-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            clip-path: square(50% at 50% 50%);        /* Keep the aspect ratio intact */
+        max-width: 600px;     /* Optional: Limit the max width */
+        border-radius: 8px;   /* Optional: Round the corners */
+        display: block;       /* Make it behave like a block element */
+        margin: 0 auto; 
+            /* This centers the image horizontally */
+        }
+
+        /* Ingredients Section */
+        .ingredients, .steps {
+            margin-top: 20px;
+        }
+
+        .ingredients h2, .steps h2 {
+            color: #16a085;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Ingredients list */
+        .ingredients ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ingredients ul li::before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Steps list */
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps ol li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .steps ol li::before {
+            content: '➡️';
+            margin-right: 10px;
+        }
+
+        /* Video Link */
+        .video-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            background-color: #ff6347;
+            padding: 15px 25px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .video-link a:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="../photos/logo.jpg" alt="Senpai's Recipes Logo">
+            </div>
+            <div class="heading">
+                <h1>Pav Bhaji 🍞🌶️</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="../photos/p_bhaji.jpg" alt="Recipe 1 Image" class="recipe-img">
+
+        <!-- Ingredients Section -->
+      <!-- Ingredients Section -->
+<div class="ingredients">
+    <h2>Ingredients for Pav Bhaji 🍞🌶️</h2>
+
+    <!-- Bhaji Ingredients -->
+    <h3>For the Bhaji (Vegetable Mash) 🌶️</h3>
+    <ul>
+        <li> 2 Large Potatoes (boiled and mashed) 🥔</li>
+        <li> 1 Cup Cauliflower (chopped) 🌸</li>
+        <li> 1/2 Cup Green Beans (chopped) 🥒</li>
+        <li> 1/2 Cup Carrots (chopped) 🥕</li>
+        <li> 1 Onion (finely chopped) 🧅</li>
+        <li> 1 Tomato (chopped) 🍅</li>
+        <li> 1 Bell Pepper (finely chopped) 🌶️</li>
+        <li> 2-3 Green Chilies (slit) 🌶️</li>
+        <li> 1 tbsp Ginger-Garlic Paste 🧄</li>
+        <li> 2 tbsp Pav Bhaji Masala (or a mix of garam masala and chili powder) 🌶️✨</li>
+        <li> 1 tbsp Red Chili Powder 🌶️</li>
+        <li> 1/2 tsp Turmeric Powder ✨</li>
+        <li> 1 tsp Cumin Seeds 🌱</li>
+        <li> 2 tbsp Butter (for the bhaji) 🧈</li>
+        <li> Salt to taste 🧂</li>
+        <li> Fresh Cilantro for garnish 🌿</li>
+        <li> Water as needed 💧</li>
+    </ul>
+
+    <!-- Pav Ingredients -->
+    <h3>For the Pav (Bread Rolls) 🍞</h3>
+    <ul>
+        <li> 8 Pav (bread rolls) 🍞</li>
+        <li> 2-3 tbsp Butter for toasting 🧈</li>
+        <li> 1/2 tsp Pav Bhaji Masala for sprinkling 🌶️✨</li>
+    </ul>
+</div>
+
+<!-- Steps Section -->
+<div class="steps">
+    <h2>Steps 🍴</h2>
+
+    <!-- Bhaji Preparation Steps -->
+    <h3>Preparing the Bhaji 🌶️</h3>
+    <ol>
+        <li> Heat 2 tbsp of butter in a large pan. Add cumin seeds and let them splutter. 🌱</li>
+        <li> Add chopped onions and sauté until they turn golden brown. 🧅</li>
+        <li> Add ginger-garlic paste and sauté for 2 minutes until fragrant. 🧄</li>
+        <li> Add chopped tomatoes, bell pepper, and green chilies. Cook until the tomatoes soften and oil starts separating. 🍅🌶️</li>
+        <li> Add red chili powder, turmeric powder, and pav bhaji masala. Stir well and cook the spices for 2 minutes. 🌶️✨</li>
+        <li> Add the chopped vegetables (cauliflower, green beans, carrots) and mix well. Stir for 5 minutes. 🥕🥒🌸</li>
+        <li> Add the boiled and mashed potatoes to the pan and mix everything together. 🌿</li>
+        <li> Add a little water to achieve a mash-like consistency. Let it cook on medium heat for 10 minutes, stirring occasionally. 💧</li>
+        <li> Taste and adjust salt and spices as needed. Garnish with fresh cilantro before serving. 🌿</li>
+    </ol>
+
+    <!-- Pav Preparation Steps -->
+    <h3>Preparing the Pav 🍞</h3>
+    <ol>
+        <li> Heat a tawa (griddle) or a large pan. Slice the pav in half horizontally. 🥖</li>
+        <li> Add a little butter to the pan and toast the pav on both sides until golden and crispy. 🧈</li>
+        <li> Sprinkle a pinch of pav bhaji masala on top of the toasted pav. 🌶️✨</li>
+    </ol>
+
+    <!-- Serving Instructions -->
+    <h3>Serving Pav Bhaji 🍴</h3>
+    <ol>
+        <li> Serve the hot bhaji in a bowl, garnished with cilantro, and a squeeze of lemon juice. 🍋🌿</li>
+        <li> Serve with the buttered and toasted pav on the side. Enjoy the Pav Bhaji with some chopped onions and a slice of lemon! 🍋🧅</li>
+    </ol>
+</div>
+
+<!-- Video Link Section -->
+<div class="video-link">
+    <a href="https://youtu.be/Gbuse4WX01I?si=Wos5RhvuOsMzBaE1" target="_blank">Watch the Full Recipe Video 📺</a>
+</div>
